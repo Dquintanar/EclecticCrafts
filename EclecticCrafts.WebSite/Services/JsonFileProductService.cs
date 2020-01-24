@@ -15,6 +15,13 @@ namespace EclecticCrafts.WebSite.Services
         }
 
         public IWebHostEnvironment WebHostEnvironment { get; }
+        
+        
+
+        private string JsonFileName
+        {
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
+        }
+
     }
 }
-
