@@ -21,6 +21,7 @@ namespace EclecticCrafts.WebSite.Pages
         {
             _logger = logger;
             ProductService = productService;
+
         }
 
         public void OnGet()
