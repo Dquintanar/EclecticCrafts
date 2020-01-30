@@ -4,15 +4,22 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="card-columns">
-    @foreach (var product in Model.Products)
-    {
-        <div class="card">
-            <div class="card-img" style="background-image: url('@product.Image');">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">@product.Title</h5>
-            </div>
-        </div>
-    }
+<div class="text-center">
+    <h1 class="display-4">Eclectic Crafts</h1>
 </div>
+
+<div class="card-columns">
+    
+@foreach (var product in Model.Products)    
+{
+    <div class="card">
+        <div class="card-img" style="background-image: url('@product.Image');"></div>
+        <div class="card-body">
+            <h5 class="card-title">@product.Title</h5>
+        </div> 
+      </div>  
+}
+</div>
+
+
+            
